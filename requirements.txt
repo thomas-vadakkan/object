@@ -1,5 +1,5 @@
 firebase-admin==5.0.1
 Flask==2.0.1
 numpy==1.19.5
-opencv-python-headless==4.2.0.32
+opencv-python-headless
 gunicorn==19.7.1
