@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import pafy
 
-url = "https://youtu.be/cfvBvRi9_P0"
+url = "https://youtu.be/NvXKz__sqmI"
 video = pafy.new(url)
 best = video.getbest(preftype="mp4")
 
