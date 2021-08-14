@@ -2,10 +2,14 @@ from flask import Flask, render_template, Response
 import cv2
 import numpy as np
 
+url = "https://youtu.be/cfvBvRi9_P0"
+video = pafy.new(url)
+best = video.getbest(preftype="mp4")
+
 thres = 0.5
 nms_threshold = 0.2
 # cap = cv2.VideoCapture('https://192.168.1.6:8080/video')
-cap = cv2.VideoCapture('https://embed.api.video/live/li5ZlFKwNxQWvcu51v7G1ceu?autoplay=true')
+cap = cv2.VideoCapture(best.url)
 # cap = cv2.imread('image01.jpg')
 cap.set(3, 640)  # width
 cap.set(4, 480)  # height
