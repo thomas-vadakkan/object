@@ -93,7 +93,7 @@ def index():
 
 if __name__ == '__main__':
     # app.run(host='192.168.1.4',port='5000', threaded=True, debug=False, use_reloader=False)
-    app.run(debug=False)
+    app.run(debug=True)
     # app.run(host='192.168.1.4', debug=False)
     # app.run(host='103.165.21.211', debug=False)
     # app.run(host='192.168.43.236', debug=False)
