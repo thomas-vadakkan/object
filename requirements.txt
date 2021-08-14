@@ -3,3 +3,5 @@ Flask==2.0.1
 numpy==1.19.5
 opencv-python-headless
 gunicorn==19.7.1
+youtube-dl
+pafy
