@@ -6,7 +6,7 @@ thres = 0.5
 nms_threshold = 0.2
 # cap = cv2.VideoCapture('https://192.168.1.6:8080/video')
 cap = cv2.VideoCapture('https://www.cameraftp.com/cameraftp/publish/camera.aspx/parentID75626517/shareID13284794/modelive/nameporch/camTypeCamera')
-cap = cv2.imread('image01.jpg')
+# cap = cv2.imread('image01.jpg')
 cap.set(3, 640)  # width
 cap.set(4, 480)  # height
 cap.set(10, 150)  # brightness
