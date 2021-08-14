@@ -5,7 +5,7 @@ import numpy as np
 thres = 0.5
 nms_threshold = 0.2
 # cap = cv2.VideoCapture('https://192.168.1.6:8080/video')
-cap = cv2.VideoCapture('https://www.youtube.com/watch?v=xyhDQTokrsE&ab_channel=M.Movies')
+cap = cv2.VideoCapture('https://studio.youtube.com/video/fmeEAN97d4M/livestreaming')
 # cap = cv2.imread('image01.jpg')
 cap.set(3, 640)  # width
 cap.set(4, 480)  # height
