@@ -5,11 +5,11 @@ import numpy as np
 thres = 0.5
 nms_threshold = 0.2
 # cap = cv2.VideoCapture('https://192.168.1.6:8080/video')
-cap = cv2.VideoCapture('https://my.ivideon.com/cameras/groups/camera/100-t208cRqzt2EIKcU2QSpusB/0')
-
-cap.set(3, 640)  # width
-cap.set(4, 480)  # height
-cap.set(10, 150)  # brightness
+# cap = cv2.VideoCapture('https://my.ivideon.com/cameras/groups/camera/100-t208cRqzt2EIKcU2QSpusB/0')
+cap = cv2.imread('image01.jpg')
+# cap.set(3, 640)  # width
+# cap.set(4, 480)  # height
+# cap.set(10, 150)  # brightness
 app = Flask(__name__)
 
 className = []
@@ -39,10 +39,11 @@ net.setInputSwapRB(True)
 def gen_frames():  # generate frame by frame from camera
     while True:
         # Capture frame-by-frame
-        success, img = cap.read()  # read the camera frame
-        if not success:
-            break
-        else:
+        # success, img = cap.read()  # read the camera frame
+        # if not success:
+        #     break
+        # else:
+            img = cap
             classIDs, confs, bbox = net.detect(img, confThreshold=thres)
         # print(classIDs,bbox)
 
