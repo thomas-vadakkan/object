@@ -1,6 +1,7 @@
 from flask import Flask, render_template, Response
 import cv2
 import numpy as np
+import pafy
 
 url = "https://youtu.be/cfvBvRi9_P0"
 video = pafy.new(url)
